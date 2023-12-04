@@ -2,9 +2,7 @@ package conta;
 
 import java.util.Scanner;
 
-import model.Conta;
-import model.ContaCorrente;
-import model.ContaPoupanca;
+
 import util.Cores;
 
 public class Menu {
