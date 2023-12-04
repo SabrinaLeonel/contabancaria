@@ -40,10 +40,10 @@ public class Menu {
 
 		while (true) {
 
-			System.out.println(Cores.TEXT_YELLOW + Cores.ANSI_BLACK_BACKGROUND
+			System.out.println(Cores.TEXT_WHITE_BRIGHT 	+ Cores.ANSI_PURPLE_BACKGROUND
 					+ "*****************************************************");
 			System.out.println("                                                     ");
-			System.out.println("                BANCO DO BRAZIL COM Z                ");
+			System.out.println("                       NUBANK                        ");
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
 			System.out.println("                                                     ");
@@ -70,7 +70,7 @@ public class Menu {
 			}
 
 			if (opcao == 9) {
-				System.out.println(Cores.TEXT_WHITE_BOLD + "\nBanco do Brazil com Z - O seu Futuro começa aqui!");
+				System.out.println(Cores.TEXT_WHITE_BRIGHT + "\nBanco do Brazil com Z - O seu Futuro começa aqui!");
 				sobre();
 				leia.close();
 				System.exit(0);
@@ -78,7 +78,7 @@ public class Menu {
 
 			switch (opcao) {
 				case 1:
-					System.out.println(Cores.TEXT_WHITE + "Criar Conta\n\n");
+					System.out.println(Cores.TEXT_WHITE_BRIGHT + "Criar Conta\n\n");
 
 					System.out.println("Digite o Numero da Agência: ");
 					agencia = leia.nextInt();
@@ -112,14 +112,14 @@ public class Menu {
 					keyPress();
 					break;
 				case 2:
-					System.out.println(Cores.TEXT_WHITE + "Listar todas as Contas\n\n");
+					System.out.println(Cores.TEXT_WHITE_BRIGHT + "Listar todas as Contas\n\n");
 
 					contas.listarTodas();
 
 					keyPress();
 					break;
 				case 3:
-					System.out.println(Cores.TEXT_WHITE + "Buscar Conta por número\n\n");
+					System.out.println(Cores.TEXT_WHITE_BRIGHT + "Buscar Conta por número\n\n");
 
 					System.out.println("Digite o número da conta: ");
 					numero = leia.nextInt();
@@ -129,7 +129,7 @@ public class Menu {
 					keyPress();
 					break;
 				case 4:
-					System.out.println(Cores.TEXT_WHITE + "Atualizar dados da Conta\n\n");
+					System.out.println(Cores.TEXT_WHITE_BRIGHT + "Atualizar dados da Conta\n\n");
 
 					System.out.println("Digite o número da conta: ");
 					numero = leia.nextInt();
@@ -171,7 +171,7 @@ public class Menu {
 					keyPress();
 					break;
 				case 5:
-					System.out.println(Cores.TEXT_WHITE + "Apagar a Conta\n\n");
+					System.out.println(Cores.TEXT_WHITE_BRIGHT + "Apagar a Conta\n\n");
 
 					System.out.println("Digite o número da conta: ");
 					numero = leia.nextInt();
@@ -181,7 +181,7 @@ public class Menu {
 					keyPress();
 					break;
 				case 6:
-					System.out.println(Cores.TEXT_WHITE + "Saque\n\n");
+					System.out.println(Cores.TEXT_WHITE_BRIGHT + "Saque\n\n");
 
 					System.out.println("Digite o Numero da conta: ");
 					numero = leia.nextInt();
@@ -196,7 +196,7 @@ public class Menu {
 					keyPress();
 					break;
 				case 7:
-					System.out.println(Cores.TEXT_WHITE + "Depósito\n\n");
+					System.out.println(Cores.TEXT_WHITE_BRIGHT + "Depósito\n\n");
 
 					System.out.println("Digite o Numero da conta: ");
 					numero = leia.nextInt();
@@ -211,7 +211,7 @@ public class Menu {
 					keyPress();
 					break;
 				case 8:
-					System.out.println(Cores.TEXT_WHITE + "Transferência entre Contas\n\n");
+					System.out.println(Cores.TEXT_WHITE_BRIGHT + "Transferência entre Contas\n\n");
 
 					System.out.println("Digite o Numero da Conta de Origem: ");
 					numero = leia.nextInt();
@@ -237,8 +237,7 @@ public class Menu {
 
 	public static void sobre() {
 		System.out.println("\n*********************************************************");
-		System.out.println("Projeto Desenvolvido por: ");
-		System.out.println("Generation Brasil - generation@generation.org");
+		System.out.println("Projeto Desenvolvido por: Sabrina Leonel da Silva ");
 		System.out.println("github.com/SabrinaLeonel");
 		System.out.println("*********************************************************");
 	}
