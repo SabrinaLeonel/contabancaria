@@ -36,4 +36,9 @@ public class ContaCorrente extends Conta{
 		System.out.println("Limite de Crédito: " + this.limite);
 	}
     
+    public void depositar(float valor) {
+    	
+        this.setSaldo(this.getSaldo() + valor);
+    }
+    
 }
